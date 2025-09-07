@@ -12,191 +12,204 @@ import {
 	faTrophy,
 	faUsersRectangle,
 	faUtensils,
+	faLaptopCode,
+	faCloud,
+	faRobot,
+	faDraftingCompass,
+	faFlagCheckered,
+	faHandshake,
+	faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 
-export const dec18Schedule = [
-	{
-		title: "Check-in & Booth setup",
-		startTime: "10:00AM",
-		endTime: "2:00PM",
-		timeZone: "GMT+1",
-		icon: faPersonWalkingArrowRight,
-	},
-	{
-		title: "Opening ceremony",
-		startTime: "3:00PM",
-		endTime: "5:00PM",
-		timeZone: "GMT+1",
-		icon: faMicrophone,
-	},
-	{
-		title: "Stands, TSYP Booths & Networking",
-		startTime: "5:00PM",
-		endTime: "7:00PM",
-		timeZone: "GMT+1",
-		icon: faPeopleArrows,
-	},
-	{
-		title: "Dinner",
-		startTime: "7:00PM",
-		endTime: "9:00PM",
-		timeZone: "GMT+1",
-		icon: faUtensils,
-	},
-	{
-		title: "Team-Building & Surprise Challenge",
-		startTime: "9:00PM",
-		endTime: "11:00PM",
-		timeZone: "GMT+1",
-		icon: faGift,
-	},
+
+export const sep27Schedule = [
+  {
+    title: "Check-in & Registration",
+    startTime: "11:00AM",
+    endTime: "2:00PM",
+    timeZone: "GMT+1",
+    icon: faPersonWalkingArrowRight
+  },
+  {
+    title: "Opening Ceremony",
+    startTime: "2:00PM",
+    endTime: "2:45PM",
+    timeZone: "GMT+1",
+    icon: faMicrophone
+  },
+  {
+    title: "Panel: The Future of Scalable AI-Driven Applications",
+    startTime: "2:45PM",
+    endTime: "3:30PM",
+    timeZone: "GMT+1",
+    icon: faMicrophone
+  },
+  {
+    title: "Coffee Break",
+    startTime: "3:30PM",
+    endTime: "3:45PM",
+    timeZone: "GMT+1",
+    icon: faMugHot
+  },
+  {
+    title: "Workshop Track 1: Web/Mobile Development",
+    startTime: "4:00PM",
+    endTime: "5:00PM",
+    timeZone: "GMT+1",
+    icon: faLaptopCode
+  },
+  {
+    title: "Workshop Track 2: Cloud",
+    startTime: "4:00PM",
+    endTime: "5:00PM",
+    timeZone: "GMT+1",
+    icon: faCloud
+  },
+  {
+    title: "Workshop Track 3: AI (Part 1)",
+    startTime: "4:00PM",
+    endTime: "5:30PM",
+    timeZone: "GMT+1",
+    icon: faRobot
+  },
+  {
+    title: "Workshop Track 4: Certified SolidWorks (Part 1)",
+    startTime: "4:00PM",
+    endTime: "5:30PM",
+    timeZone: "GMT+1",
+    icon: faDraftingCompass
+  },
+  {
+    title: "Industry Booth Networking",
+    startTime: "5:15PM",
+    endTime: "6:15PM",
+    timeZone: "GMT+1",
+    icon: faHandshake
+  },
+  {
+    title: "CS Benefits Session",
+    startTime: "6:15PM",
+    endTime: "7:00PM",
+    timeZone: "GMT+1",
+    icon: faUsers
+  },
+  {
+    title: "Student-to-YP Transition Session",
+    startTime: "6:15PM",
+    endTime: "7:00PM",
+    timeZone: "GMT+1",
+    icon: faUsers
+  },
+  {
+    title: "MTTS Session",
+    startTime: "6:15PM",
+    endTime: "7:00PM",
+    timeZone: "GMT+1",
+    icon: faUsers
+  },
+  {
+    title: "SMC Session",
+    startTime: "6:15PM",
+    endTime: "7:00PM",
+    timeZone: "GMT+1",
+    icon: faUsers
+  },
+  {
+    title: "Workshop Track 3: AI (Part 2)",
+    startTime: "6:15PM",
+    endTime: "7:45PM",
+    timeZone: "GMT+1",
+    icon: faRobot
+  },
+  {
+    title: "Workshop Track 4: Certified SolidWorks (Part 2)",
+    startTime: "6:15PM",
+    endTime: "7:45PM",
+    timeZone: "GMT+1",
+    icon: faDraftingCompass
+  },
+  {
+    title: "Dinner",
+    startTime: "7:30PM",
+    endTime: "9:00PM",
+    timeZone: "GMT+1",
+    icon: faUtensils
+  },
+  {
+    title: "Leadership Bootcamp (Injaz Tunisia)",
+    startTime: "9:15PM",
+    endTime: "10:15PM",
+    timeZone: "GMT+1",
+    icon: faMicrophone
+  },
+  {
+    title: "Hackathon: Challenge Launch & Ideation",
+    startTime: "10:15PM",
+    endTime: "10:30PM",
+    timeZone: "GMT+1",
+    icon: faFlagCheckered
+  },
+  {
+    title: "Hotel Party & Networking",
+    startTime: "11:00PM",
+    endTime: "1:00AM",
+    timeZone: "GMT+1",
+    icon: faHandshake
+  }
 ];
 
-export const dec19Schedule = [
-	{
-		title: "Breakfast",
-		startTime: "7:00AM",
-		endTime: "9:00AM",
-		timeZone: "GMT+1",
-		icon: faUtensils,
-	},
-	{
-		title: "IEEE challenges, Partner challenges, Workshops & panels",
-		startTime: "9:00AM",
-		endTime: "10:30AM",
-		timeZone: "GMT+1",
-		icon: faUsersRectangle,
-	},
-	{
-		title: "Coffee break",
-		startTime: "10:30AM",
-		endTime: "10:35AM",
-		timeZone: "GMT+1",
-		icon: faMugHot,
-	},
-	{
-		title: "IEEE challenges, Partner challenges, Workshops & panels",
-		startTime: "10:35AM",
-		endTime: "12:00PM",
-		timeZone: "GMT+1",
-		icon: faUsersRectangle,
-	},
-	{
-		title: "Lunch",
-		startTime: "12:00PM",
-		endTime: "2:00PM",
-		timeZone: "GMT+1",
-		icon: faUtensils,
-	},
-	{
-		title: "IEEE challenges, Partner challenges, Workshops & panels",
-		startTime: "2:00PM",
-		endTime: "3:30PM",
-		timeZone: "GMT+1",
-		icon: faUsersRectangle,
-	},
-	{
-		title: "Coffee break",
-		startTime: "3:30PM",
-		endTime: "3:35PM",
-		timeZone: "GMT+1",
-		icon: faMugHot,
-	},
-	{
-		title: "IEEE challenges, Partner challenges, Workshops & panels",
-		startTime: "3:35PM",
-		endTime: "5:05PM",
-		timeZone: "GMT+1",
-		icon: faUsersRectangle,
-	},
-	{
-		title: "Coffee break",
-		startTime: "5:05PM",
-		endTime: "5:10PM",
-		timeZone: "GMT+1",
-		icon: faMugHot,
-	},
-	{
-		title: "IEEE challenges, Partner challenges, Workshops & panels",
-		startTime: "5:10PM",
-		endTime: "6:40PM",
-		timeZone: "GMT+1",
-		icon: faUsersRectangle,
-	},
-	{
-		title: "Dinner",
-		startTime: "7:00PM",
-		endTime: "9:00PM",
-		timeZone: "GMT+1",
-		icon: faUtensils,
-	},
-	{
-		title: "Talent show",
-		startTime: "9:00PM",
-		endTime: "9:30PM",
-		timeZone: "GMT+1",
-		icon: faAward,
-	},
-	{
-		title: "Award ceremony",
-		startTime: "9:30PM",
-		endTime: "10:00PM",
-		timeZone: "GMT+1",
-		icon: faHands,
-	},
-	{
-		title: "Finalists announcement, social activities",
-		startTime: "10:00PM",
-		endTime: "11:00PM",
-		timeZone: "GMT+1",
-		icon: faMedal,
-	},
+export const sep28Schedule = [
+  {
+    title: "Breakfast & Networking",
+    startTime: "7:00AM",
+    endTime: "9:00AM",
+    timeZone: "GMT+1",
+    icon: faUtensils
+  },
+  {
+    title: "IEEE Mentoring Session",
+    startTime: "9:30AM",
+    endTime: "10:30AM",
+    timeZone: "GMT+1",
+    icon: faUsers
+  },
+  {
+    title: "Hackathon Finale & Pitches",
+    startTime: "10:30AM",
+    endTime: "12:00PM",
+    timeZone: "GMT+1",
+    icon: faFlagCheckered
+  },
+  {
+    title: "Lunch with Industry Mentors",
+    startTime: "12:00PM",
+    endTime: "1:00PM",
+    timeZone: "GMT+1",
+    icon: faUtensils
+  },
+  {
+    title: "Check-out Process",
+    startTime: "1:00PM",
+    endTime: "1:30PM",
+    timeZone: "GMT+1",
+    icon: faPersonWalkingArrowRight
+  },
+  {
+    title: "Awards Ceremony",
+    startTime: "1:30PM",
+    endTime: "2:00PM",
+    timeZone: "GMT+1",
+    icon: faTrophy
+  },
+  {
+    title: "Closing Ceremony",
+    startTime: "2:00PM",
+    endTime: "2:30PM",
+    timeZone: "GMT+1",
+    icon: faMicrophone
+  }
 ];
 
-export const dec20Schedule = [
-	{
-		title: "Breakfast",
-		startTime: "7:00AM",
-		endTime: "9:00AM",
-		timeZone: "GMT+1",
-		icon: faUtensils,
-	},
-	{
-		title: "Tunisia Section Awards",
-		startTime: "9:00AM",
-		endTime: "9:45AM",
-		timeZone: "GMT+1",
-		icon: faTrophy,
-	},
-	{
-		title: "Announcement of Paper Contest Winners",
-		startTime: "9:45AM",
-		endTime: "10:00AM",
-		timeZone: "GMT+1",
-		icon: faPersonChalkboard,
-	},
-	{
-		title: "Finalists Presentation (Q&A, Voting)",
-		startTime: "10:00AM",
-		endTime: "11:30AM",
-		timeZone: "GMT+1",
-		icon: faPersonChalkboard,
-	},
-	{
-		title: "Winners announcement and Closing ceremony",
-		startTime: "11:30AM",
-		endTime: "12:00PM",
-		timeZone: "GMT+1",
-		icon: faTrophy,
-	},
-	{
-		title: "Checkout",
-		startTime: "12:00PM",
-		endTime: "1:00PM",
-		timeZone: "GMT+1",
-		icon: faPersonWalkingDashedLineArrowRight,
-	},
-];
 
 export const areAllLocationsSame = (activities) => {
 	if (activities.length <= 1) {

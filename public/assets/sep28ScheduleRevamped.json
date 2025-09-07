@@ -1,0 +1,72 @@
+[
+  {
+    "timeSlotStart": "7:00 AM",
+    "timeSlotEnd": "9:00 AM",
+    "activities": [
+      {
+        "title": "Breakfast",
+        "location": "Dining Area"
+      }
+    ]
+  },
+  {
+    "timeSlotStart": "9:30 AM",
+    "timeSlotEnd": "10:30 AM",
+    "activities": [
+      {
+        "title": "IEEE Mentoring Session",
+        "location": "Main Hall"
+      }
+    ]
+  },
+  {
+    "timeSlotStart": "10:30 AM",
+    "timeSlotEnd": "12:00 PM",
+    "activities": [
+      {
+        "title": "Hackathon Finale & Pitches",
+        "location": "Main Hall"
+      }
+    ]
+  },
+  {
+    "timeSlotStart": "12:00 PM",
+    "timeSlotEnd": "1:00 PM",
+    "activities": [
+      {
+        "title": "Lunch with Industry Mentors",
+        "location": "Dining Area"
+      }
+    ]
+  },
+  {
+    "timeSlotStart": "1:00 PM",
+    "timeSlotEnd": "1:30 PM",
+    "activities": [
+      {
+        "title": "Check-out Process",
+        "location": "Reception Desk"
+      }
+    ]
+  },
+  {
+    "timeSlotStart": "1:30 PM",
+    "timeSlotEnd": "2:00 PM",
+    "activities": [
+      {
+        "title": "Awards Ceremony",
+        "location": "Main Hall"
+      }
+    ]
+  },
+  {
+    "timeSlotStart": "2:00 PM",
+    "timeSlotEnd": "2:30 PM",
+    "activities": [
+      {
+        "title": "Closing Ceremony",
+        "location": "Main Hall"
+      }
+    ]
+  }
+]

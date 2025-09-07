@@ -63,7 +63,7 @@ export default function SponsorsList() {
 				{!!hostedBy?.length && (
 					<div>
 						<div className="sticky top-0 bg-gray-50 py-4 text-2xl font-bold dark:bg-black">
-							IEEE Global Partners
+							IEEE Partners (International)
 						</div>
 						<div className="grid grid-cols-12 gap-y-4 md:gap-4">
 							{partners.map((e) => (
@@ -103,7 +103,7 @@ export default function SponsorsList() {
 				{!!academicPartners?.length && (
 					<div id="ExclusiveAcademicPartner">
 						<div className="sticky top-0 bg-gray-50 py-4 text-2xl font-bold dark:bg-black">
-							Exclusive Academic Partner
+							Sponsors
 						</div>
 						<div className="grid grid-cols-12 gap-y-4 md:auto-rows-fr md:gap-4">
 							{academicPartners.map((e) => (

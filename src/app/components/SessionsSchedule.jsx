@@ -3,21 +3,21 @@ import SessionScheduleBox from "./SessionScheduleBox";
 import { useSearchParams } from "react-router-dom";
 
 export default function SessionsSchedule() {
-	const [dec18ScheduleRevamped, setDec18ScheduleRevamped] = useState([]);
-	const [dec19ScheduleRevamped, setDec19ScheduleRevamped] = useState([]);
+	const [sep27ScheduleRevamped, setSep27ScheduleRevamped] = useState([]);
+	const [sep28ScheduleRevamped, setSep28ScheduleRevamped] = useState([]);
 
 	useEffect(() => {
 		const getData = async () => {
-			await fetch("/assets/dec18ScheduleRevamped.json")
+			await fetch("/assets/sep27ScheduleRevamped.json")
 				.then((response) => response.json())
 				.then((response) => {
-					setDec18ScheduleRevamped(response);
+					setSep27ScheduleRevamped(response);
 				})
 				.catch((err) => console.error(err));
-			await fetch("/assets/dec19ScheduleRevamped.json")
+			await fetch("/assets/sep28ScheduleRevamped.json")
 				.then((response) => response.json())
 				.then((response) => {
-					setDec19ScheduleRevamped(response);
+					setSep28ScheduleRevamped(response);
 				})
 				.catch((err) => console.error(err));
 		};
@@ -31,7 +31,7 @@ export default function SessionsSchedule() {
 
 	const [activeSchedule, setActiveSchedule] = useState("Full Schedule");
 
-	const filtered18 = dec18ScheduleRevamped
+	const filtered27 = sep27ScheduleRevamped
 		?.filter((e) => !!e.detailedActivities)
 		?.filter((e) => {
 			return (
@@ -45,7 +45,7 @@ export default function SessionsSchedule() {
 			);
 		});
 
-	const filtered19 = dec19ScheduleRevamped
+	const filtered28 = sep28ScheduleRevamped
 		?.filter((e) => !!e.detailedActivities)
 		?.filter((e) => {
 			return (

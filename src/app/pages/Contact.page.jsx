@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { SparrowSurvey } from "./Home.page";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
-
+import CustomImage from "../components/CustomImage";
 export default function ContactPage() {
 	return (
 		<div className="h-full">
@@ -70,31 +70,16 @@ export function ContactDetails({ title = "Reach us" }) {
 						{title}
 					</h1>
 					<p className="mb-10 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-center lg:text-xl">
-						We value teamwork and honesty. Join us if you share the same values.
+						Where to find us.
 					</p>
 				</div>
 			</div>
 
 			<div className="grid gap-y-6 md:grid-cols-12 md:gap-12">
 				<div className="flex flex-col justify-center md:col-span-6">
-					<h1 className="mb-4 text-3xl font-bold   md:text-center lg:text-4xl lg:font-extrabold lg:leading-none">
-						Reach out via Email
-					</h1>
-					<h1 className="mb-6 text-3xl font-semibold md:mb-12   md:text-center lg:text-4xl lg:leading-none">
-						tsyp@ieee.org
-					</h1>
-					<h1 className="mb-4 text-3xl font-bold   md:text-center lg:text-4xl lg:font-extrabold lg:leading-none">
-						Or call us
-					</h1>
-					<h1 className="mb-4 text-3xl font-semibold   md:text-center lg:text-4xl lg:leading-none">
-						+216 52 227 099
-					</h1>
-				</div>
-
-				<div className="md:col-span-6">
 					<iframe
-						title="tsyp location"
-						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12935.840417133557!2d10.5974361!3d35.8499818!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd8a6826eca57b%3A0xf698bd059d8e2d13!2s%C3%89cole%20sup%C3%A9rieure%20des%20sciences%20et%20de%20la%20technologie%20de%20Hammam%20Sousse!5e0!3m2!1sen!2stn!4v1688595702507!5m2!1sen!2stn"
+						title="ISET Djerba"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.7524635018663!2d10.970674776169737!3d33.81870053002507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13aabd5d8c1c4e53%3A0xb473115a0ed492ae!2sHigher%20Institute%20of%20Technological%20Studies%20of%20Djerba!5e0!3m2!1sen!2stn!4v1757273914416!5m2!1sen!2stn"
 						className="aspect-video w-full rounded-2xl shadow-lg"
 						// height="400"
 						style={{
@@ -106,6 +91,71 @@ export function ContactDetails({ title = "Reach us" }) {
 						referrerPolicy="no-referrer-when-downgrade"
 					></iframe>
 				</div>
+
+				<div className="md:col-span-6">
+					<iframe
+						title="EPS"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.9265684927414!2d10.58699887623615!3d35.82627732199195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd8b3a0237010f%3A0x4418fc1f1a3cb73f!2sPolytechnique%20Sousse!5e0!3m2!1sen!2stn!4v1757273838259!5m2!1sen!2stn"
+						className="aspect-video w-full rounded-2xl shadow-lg"
+						// height="400"
+						style={{
+							border: 0,
+							// width: "100%",
+						}}
+						allowFullScreen=""
+						loading="lazy"
+						referrerPolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+			</div>
+
+			<div className="mt-20 flex justify-center gap-6">
+
+
+				<a
+					href="https://www.facebook.com/share/17NzgSazdZ/"
+					target="_blank"
+					rel="noreferrer"
+					className=" bg-transparent transition hover:scale-105"
+				>
+					<CustomImage
+					className="h-16 w-16"
+						src={"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"}
+						alt="Facebook"
+					// width={200}
+					// height={200}
+					/>
+				</a>
+				<a
+					href="https://www.instagram.com/techx_tunisia2025?igsh=cGl6cXk0emFtZWll"
+					target="_blank"
+					rel="noreferrer"
+					className=" transition hover:scale-105"
+				>
+					<CustomImage
+					className="h-16 w-16"
+						src={"https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"}
+						alt="Instagram"
+					// width={200}
+					// height={200}
+					/>
+				</a>
+
+								<a
+								href="https://www.linkedin.com/company/techx-tunisia-beyond-the-cloudline/"
+									target="_blank"
+									rel="noreferrer"
+									className=" transition hover:scale-105"
+								>
+					<CustomImage
+					className="h-16 w-16"
+						src={"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png"}
+						alt="LinkedIn"
+					// width={200}
+					// height={200}
+					/>
+				</a>
+
 			</div>
 		</section>
 	);
@@ -147,7 +197,8 @@ export function ContactForm({ title = "Contact us" }) {
 						{title}
 					</h1>
 					<p className="mb-10 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-center lg:text-xl">
-						Let us know what you need and we will get back to you in no time.
+						Let us know what you need and we will get back to you in no time. either through the form below
+						or by sending us an email at <br/> <b>techx-tunisia-25@ieee.tn</b>
 					</p>
 				</div>
 			</div>
@@ -263,9 +314,8 @@ export function ContactForm({ title = "Contact us" }) {
 						<div className="g-recaptcha" data-sitekey="---"></div>
 
 						<button
-							className={`w-full rounded-lg bg-blue-700 px-5 py-3 text-center text-base font-medium text-white sm:w-auto ${
-								isSending ? "opacity-50" : ""
-							}`}
+							className={`w-full rounded-lg bg-[#ffa800] px-5 py-3 text-center text-base font-medium text-white sm:w-auto ${isSending ? "opacity-50" : ""
+								}`}
 							type="submit"
 							disabled={isSending}
 						>

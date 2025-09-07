@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Team from "../components/Team";
-import { ContactDetails, ContactForm } from "./Contact.page";
-import { AboutESSTHSSB, AboutTSYP, AboutTunisiaSection } from "./Home.page";
+import { AboutOrganisers, AboutTechX, AboutTunisiaSection } from "./Home.page";
 import { Fade } from "react-awesome-reveal";
 import {
 	faAward,

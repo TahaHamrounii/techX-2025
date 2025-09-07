@@ -7,28 +7,21 @@ import "./TimelineSchedule.scss";
 export default function TimelineSchedule() {
 	const [selectedTab, setSelectedTab] = useState(0);
 
-	const [dec18ScheduleRevamped, setDec18ScheduleRevamped] = useState([]);
-	const [dec19ScheduleRevamped, setDec19ScheduleRevamped] = useState([]);
-	const [dec20ScheduleRevamped, setDec20ScheduleRevamped] = useState([]);
+	const [sep27ScheduleRevamped, setSep27ScheduleRevamped] = useState([]);
+	const [sep28ScheduleRevamped, setSep28ScheduleRevamped] = useState([]);
 
 	useEffect(() => {
 		const getData = async () => {
-			await fetch("/assets/dec18ScheduleRevamped.json")
+			await fetch("/assets/sep27ScheduleRevamped.json")
 				.then((response) => response.json())
 				.then((response) => {
-					setDec18ScheduleRevamped(response);
+					setSep27ScheduleRevamped(response);
 				})
 				.catch((err) => console.error(err));
-			await fetch("/assets/dec19ScheduleRevamped.json")
+			await fetch("/assets/sep28ScheduleRevamped.json")
 				.then((response) => response.json())
 				.then((response) => {
-					setDec19ScheduleRevamped(response);
-				})
-				.catch((err) => console.error(err));
-			await fetch("/assets/dec20ScheduleRevamped.json")
-				.then((response) => response.json())
-				.then((response) => {
-					setDec20ScheduleRevamped(response);
+					setSep28ScheduleRevamped(response);
 				})
 				.catch((err) => console.error(err));
 		};
@@ -36,9 +29,8 @@ export default function TimelineSchedule() {
 	}, []);
 
 	const tabs = [
-		dec18ScheduleRevamped,
-		dec19ScheduleRevamped,
-		dec20ScheduleRevamped,
+		sep27ScheduleRevamped,
+		sep28ScheduleRevamped,
 	];
 
 	const selectedSchedule = tabs?.[selectedTab];
@@ -54,7 +46,7 @@ export default function TimelineSchedule() {
 							"scale-110 border-b-2 border-gray-600 font-extrabold"
 					)}
 				>
-					December 18
+					September 27
 				</button>
 				<button
 					onClick={() => setSelectedTab(1)}
@@ -64,18 +56,9 @@ export default function TimelineSchedule() {
 							"scale-110 border-b-2 border-gray-600 font-extrabold"
 					)}
 				>
-					December 19
+					September 28
 				</button>
-				<button
-					onClick={() => setSelectedTab(2)}
-					className={twMerge(
-						"text-xl font-bold transition",
-						selectedTab === 2 &&
-							"scale-110 border-b-2 border-gray-600 font-extrabold"
-					)}
-				>
-					December 20
-				</button>
+			
 			</div>
 			<div className="service-cloud">
 				<div className="b-our-process">

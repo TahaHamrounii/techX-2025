@@ -18,7 +18,6 @@ import SchedulePage from "./app/pages/Schedule.page.jsx";
 import SessionsPage from "./app/pages/Sessions.page.jsx";
 import SponsorsPage from "./app/pages/Sponsors.page.jsx";
 import SponsorUsPage from "./app/pages/SponsorUs.page.jsx";
-import TunisiaPage from "./app/pages/Tunisia.page.jsx";
 import VenuePage from "./app/pages/Venue.page.jsx";
 import VirtualGamePage from "./app/pages/VirtualGame.page.jsx";
 import { WinnersPage } from "./app/pages/Winners.jsx";
@@ -44,10 +43,7 @@ const router = createBrowserRouter([
 				path: "/virtual-game",
 				element: <VirtualGamePage />,
 			},
-			{
-				path: "tunisia",
-				element: <TunisiaPage />,
-			},
+
 			{
 				path: "partners-sponsors",
 				element: <SponsorsPage />,
@@ -57,7 +53,7 @@ const router = createBrowserRouter([
 				element: <SchedulePage />,
 			},
 			{
-				path: "partners-sponsors/:companySlug",
+				path: "contributors/:companySlug",
 				element: <ExpoDetailsPage />,
 			},
 			{
@@ -77,7 +73,7 @@ const router = createBrowserRouter([
 				element: <Speaker />,
 			},
 			{
-				path: "about-us",
+				path: "about",
 				element: <AboutUs />,
 			},
 			{
@@ -97,8 +93,8 @@ const router = createBrowserRouter([
 				element: <EventSatisfactionFormPage />,
 			},
 			{
-				path: "sponsor-us",
-				element: <SponsorUsPage />,
+				path: "contributors",
+				element: <SponsorsPage />,
 			},
 			{
 				path: "challenges",

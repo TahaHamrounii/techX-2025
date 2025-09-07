@@ -29,7 +29,10 @@ export default function AppLayout({ children }) {
 	return (
 		<>
 			<div className="flex min-h-full flex-col">
-				<Navigation />
+				{/* Sticky header wrapper (Navigation already has its own sticky classes, this ensures layout-level stickiness if that changes) */}
+				<div className="sticky top-0 z-50 w-full"> 
+					<Navigation />
+				</div>
 
 				<main className="container mx-auto flex flex-1 p-4 py-8 2xl:px-24">
 					<motion.div

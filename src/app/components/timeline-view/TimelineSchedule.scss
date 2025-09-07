@@ -532,34 +532,35 @@
 	}
 
 	.service-cloud .service-hero {
+		/* Updated gradient to orange tones */
 		background-image: linear-gradient(
 			180deg,
-			rgba(177, 238, 255, 0.13),
-			rgba(0, 191, 242, 0.13)
+			rgba(255, 214, 130, 0.18),
+			rgba(255, 168, 0, 0.18)
 		);
 	}
 
 	.service-cloud .service-hero__list li,
 	.service-cloud .service-hero__title {
-		color: #02718e;
+		color: #ffa800;
 	}
 
 	.service-cloud .service-hero__bubble span {
-		border-color: #02718e;
+		border-color: #ffa800;
 	}
 
 	.service-cloud .b-case-studies__title,
 	.service-cloud .b-our-process__title,
 	.service-cloud .b-whatwedo__title {
-		color: #02718e;
+		color: #ffa800;
 	}
 
 	.service-cloud .b-whatwedo .b-value__title:after {
-		background: #00bff2;
+		background: #ffa800;
 	}
 
 	.service-cloud .b-our-process__title:before {
-		background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #00bff2);
+		background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #ffa800);
 	}
 
 	.service-cloud
@@ -580,7 +581,7 @@
 		.step-out
 		.step-line
 		.corner:after {
-		border-color: #00bff2;
+		border-color: #ffa800;
 	}
 
 	.service-cloud
@@ -589,7 +590,7 @@
 		.step
 		.step-line
 		.corner-line:after {
-		border-top-color: #00bff2;
+		border-top-color: #ffa800;
 	}
 
 	.service-cloud
@@ -598,31 +599,31 @@
 		.step
 		.step-line
 		.corner:after {
-		border-color: #00bff2;
+		border-color: #ffa800;
 	}
 
 	.service-cloud .b-step-content__logo:after {
-		border-left-color: #00bff2;
+		border-left-color: #ffa800;
 	}
 
 	.service-cloud .b-step-content__title:before {
-		color: #00bff2;
+		color: #ffa800;
 	}
 
 	.service-cloud .b-step-content__title:after {
-		background: #00bff2;
+		background: #ffa800;
 	}
 
 	.service-cloud .b-our-process .c-process-steps .circle:after {
-		box-shadow: 0 7px 30px 7px rgba(0, 191, 242, 0.3);
+		box-shadow: 0 7px 30px 7px rgba(255, 168, 0, 0.35);
 	}
 
 	.service-cloud .b-our-process .c-process-steps .circle,
 	.service-cloud .b-our-process .c-process-steps .circle:after {
-		border-color: rgba(0, 191, 242, 0.3);
+		border-color: rgba(255, 168, 0, 0.3);
 	}
 
 	.service-cloud .b-our-process .c-process-steps .circle:before {
-		border-color: rgba(0, 191, 242, 0.6);
+		border-color: rgba(255, 168, 0, 0.55);
 	}
 }

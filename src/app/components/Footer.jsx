@@ -66,7 +66,7 @@ export default function Footer() {
 						target="_blank"
 						className="font-semibold"
 					>
-						© 2023 All rights reserved.
+						© 2025 All rights reserved.
 					</Link>
 				</div>
 
@@ -102,40 +102,7 @@ export default function Footer() {
 							<ThemeToggle />
 						</div>
 					)}
-					<Link
-						to="https://github.com/hichemfantar/TSYP-11-Official-Website"
-						aria-label="github repo"
-						target="_blank"
-					>
-						<FontAwesomeIcon icon={faGithub} className="block h-5 w-5 p-2" />
-					</Link>
-					<a
-						href="https://www.facebook.com/ieee.tsyp"
-						target="_blank"
-						rel="noreferrer"
-						className="text-gray-600 dark:text-gray-400"
-						aria-label="facebook page"
-					>
-						<FontAwesomeIcon icon={faFacebook} />
-					</a>
-					<a
-						href="https://www.instagram.com/ieee_tsyp/"
-						target="_blank"
-						rel="noreferrer"
-						className="text-gray-600 dark:text-gray-400"
-						aria-label="instagram page"
-					>
-						<FontAwesomeIcon icon={faInstagram} />
-					</a>
-					<a
-						href="https://www.linkedin.com/company/ieee-tsyp/"
-						target="_blank"
-						rel="noreferrer"
-						className="text-gray-600 dark:text-gray-400"
-						aria-label="linkedin page"
-					>
-						<FontAwesomeIcon icon={faLinkedin} />
-					</a>
+					
 				</div>
 			</div>
 		</footer>

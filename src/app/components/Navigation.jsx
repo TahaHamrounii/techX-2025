@@ -4,8 +4,8 @@ import { twMerge } from "tailwind-merge";
 import routes from "../routes";
 import NavModal from "./NavModal";
 import Logo from "../../assets/main logo black (Custom).png";
-import LightLogo from "../../assets/small_main_logo_3_custom.png";
-import LogoOnBlack from "../../assets/small_11logo_on_black_custom.png";
+import MainWhite from "../../assets/main white.png";
+import MainBlack from "../../assets/main black.png";
 import ThemeToggle from "./ThemeToggle";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
@@ -34,23 +34,23 @@ export default function Navigation() {
 	}, []);
 
 	return (
-		<div>
-			<nav className="rounded border-gray-200 px-4 py-2.5 sm:px-8">
+		<div className="bg-white dark:bg-black"> 
+			<nav className="rounded border-gray-200 px-4 py-2.5 sm:px-8 ">
 				<div className="container mx-auto flex flex-wrap items-center justify-between">
 					<Link to="/" className="flex items-center">
 						<CustomImage
 							loading="eager"
-							src={LogoOnBlack || Logo}
+							src={MainWhite}
 							className={`mr-3 hidden h-10 dark:block ${
-								LogoOnBlack ? "" : "dark:invert"
+								MainWhite ? "" : "dark:invert"
 							} sm:h-12`}
-							alt="TSYP 11"
+							alt="TechX"
 						/>
 						<CustomImage
 							loading="eager"
-							src={LightLogo}
+							src={MainBlack}
 							className={`mr-3 h-10 dark:hidden sm:h-12`}
-							alt="TSYP 11"
+							alt="TechX"
 						/>
 						{/* <svg
 							className="mr-3 h-6 fill-gray-900 dark:fill-gray-100 sm:h-9"
@@ -69,7 +69,7 @@ export default function Navigation() {
 					</Link>
 					<div className="fontt-['space_mono'] flex items-center gap-2">
 						<div className="hidden w-auto items-center justify-between lg:flex">
-							<ul className="flex flex-col rounded-lg border border-gray-100 p-4 dark:border-gray-700 md:mt-0 md:flex-row md:border-0 md:text-sm md:font-medium">
+							<ul className="flex flex-col items-center justify-center gap-1 rounded-lg border border-gray-100 p-4 text-center dark:border-gray-700 md:mt-0 md:flex-row md:items-center md:justify-center md:gap-2 md:border-0 md:text-sm md:font-medium">
 								{routes
 									// .filter((r) => !r.mobile)
 									.filter((r) => !r.mobileOnly)
@@ -83,7 +83,6 @@ export default function Navigation() {
 													<div>
 														<Menu.Button
 															className={twMerge(
-																// "inline-flex w-full justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75",
 																"inline-flex items-center p-4 px-4 text-gray-600 transition-all duration-75 hover:font-bold focus:font-bold dark:text-gray-400 dark:hover:text-gray-200"
 															)}
 														>
@@ -158,121 +157,45 @@ export default function Navigation() {
 										</li>
 									))}
 
-								{/* <li>
-									<a
-										href="#"
-										className="block rounded bg-blue-700 py-2 pl-3 pr-4 text-white  md:bg-transparent md:p-0 md:text-blue-700"
-										aria-current="page"
-									>
-										Keynote
-									</a>
-								</li>
-								<li>
-									<a
-										href="#"
-										className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
-									>
-										Stage J
-									</a>
-								</li> */}
+								
 							</ul>
 						</div>
-
-						{true && (
-							<Link className="hidden md:block" to="/reveal" target="_blank">
-								<FontAwesomeIcon
-									icon={faPlay}
-									className="block h-5 w-5 -rotate-90 p-2 transition hover:scale-110"
-								/>
-							</Link>
-						)}
+						
 						<div className="hidden lg:block">
 							<ThemeToggle />
 						</div>
-						<Link
-							to="https://github.com/hichemfantar/TSYP-11-Official-Website"
-							target="_blank"
-						>
-							<FontAwesomeIcon icon={faGithub} className="block h-5 w-5 p-2" />
-						</Link>
 
-						{false && (
-							<Link
-								to="/sponsor-us"
-								className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium  transition-shadow hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
-							>
-								{/* <button
-								type="button"
-								className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium  transition-shadow hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
-							> */}
-								<span className="relative rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900">
-									Sponsor us
-								</span>
-								{/* </button> */}
-							</Link>
-						)}
-						{!isEventLive && (
+						{!isEventLive ? (
 							<>
-								<Link
-									to="/live-event-space"
-									className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium  transition-shadow hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
-								>
-									{/* <button
-								type="button"
-								className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium  transition-shadow hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
-							> */}
-									<div className="relative flex items-center justify-center gap-2 rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900">
-										{/* <FontAwesomeIcon className="-rotate-45" icon={faTicket} /> */}
-										<span className="">We're live!</span>
-									</div>
-									{/* </button> */}
-								</Link>
-
-								{false && (
 									<Link
 										to="/registration"
-										className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium  transition-shadow hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
+										className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-[#ffa800] font-medium text-black transition-colors duration-200 hover:bg-[#e09600] hover:text-black focus:outline-none focus:ring-4 focus:ring-[#ffa800]/40"
 									>
-										{/* <button
-								type="button"
-								className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium  transition-shadow hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
-							> */}
-										<div className="relative flex items-center justify-center gap-2 rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900">
-											{/* <FontAwesomeIcon className="-rotate-45" icon={faTicket} /> */}
+										<div className="relative text-white flex items-center justify-center gap-2 rounded-md bg-[#ffa800] px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 ">
 											<span className="hidden md:block">Register Now</span>
 											<span className="md:hidden">Register Now</span>
 										</div>
-										{/* </button> */}
 									</Link>
-								)}
 							</>
-						)}
-						{isEventLive && (
+						)
+						:(
 							<Link
 								to="/live-event-space"
 								className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium  transition-shadow hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
 							>
-								{/* <button
-								type="button"
-								className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 p-0.5 text-sm font-medium  transition-shadow hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 group-hover:from-purple-500 group-hover:to-pink-500  dark:focus:ring-purple-800"
-							> */}
+								
 								<div className="relative flex items-center justify-center gap-2 rounded-md bg-white px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-gray-900">
-									{/* <FontAwesomeIcon className="-rotate-45" icon={faTicket} /> */}
 									<span className="hidden md:block">We're Live!</span>
 									<span className="md:hidden">We're Live!</span>
 								</div>
-								{/* </button> */}
 							</Link>
 						)}
-						{/* <button
-							type="button"
-							className="mr-3 rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 md:mr-0"
+						<a
+													href={"https://github.com/clicktodev/TSYP-11-Congress-Website"}
+
 						>
-							Get started
-						</button> */}
-
-						{/* <ThemeToggle /> */}
-
+						<FontAwesomeIcon icon={faGithub}/>
+</a>
 						<button
 							data-collapse-toggle="navbar-cta"
 							type="button"
