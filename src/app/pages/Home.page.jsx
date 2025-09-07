@@ -710,7 +710,7 @@ function PreviousEditions() {
 							<CustomImage
 								className="col-span-2 h-[120px] w-[120px] rounded-full object-contain p-4 shadow-md shadow-gray-200 transition dark:invert sm:col-start-2 md:h-[200px] md:w-[200px] lg:col-span-1"
 								src={TSYP2018}
-								alt="TSYP2018"
+								alt="ts"
 							// width={200}
 							// height={200}
 							/>
