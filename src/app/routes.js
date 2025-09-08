@@ -11,31 +11,23 @@ const routes = [
 		title: "Speakers",
 		href: "/speakers",
 	},
-
-	// Removed duplicate mobileOnly entries (Schedule, Speakers, Venue, Challenges)
-	// to avoid double appearance in the mobile navigation modal.
-
 	{
-		title: "Schedule",
-		href: "/schedule",
-		mobileOnly: true,
+		title: "Challenges",
+		href: "/challenges",
 	},
-	{
-		title: "Speakers",
-		href: "/speakers",
-		mobileOnly: true,
-	},
-
 	{
 		title: "Venue",
 		href: "/venue",
 		mobileOnly: true,
 	},
-		{
-		title: "Challenges",
-		href: "/challenges",
-		mobileOnly: true,
+	{
+		title:"Contributors",	
+		href:"/contributors"
 	},
+	{
+		title: 'About',
+		href: '/about',
+	}
 
 	// {
 	// 	title: "Registration",
