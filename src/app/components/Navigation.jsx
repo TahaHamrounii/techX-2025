@@ -190,12 +190,12 @@ export default function Navigation() {
 								</div>
 							</Link>
 						)}
-						<a
+						{/* <a
 													href={"https://github.com/clicktodev/TSYP-11-Congress-Website"}
 
 						>
 						<FontAwesomeIcon icon={faGithub}/>
-</a>
+</a> */}
 						<button
 							data-collapse-toggle="navbar-cta"
 							type="button"

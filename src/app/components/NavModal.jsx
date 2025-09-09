@@ -12,7 +12,7 @@ import {
 	faInstagram,
 	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import hich from "../../assets/favicon.ico";
+import hich from "../../assets/fontbolt.png";
 
 export default function NavModal({ setToggleModal, toggleModal }) {
 	return (

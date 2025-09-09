@@ -18,7 +18,6 @@ const routes = [
 	{
 		title: "Venue",
 		href: "/venue",
-		mobileOnly: true,
 	},
 	{
 		title:"Contributors",	

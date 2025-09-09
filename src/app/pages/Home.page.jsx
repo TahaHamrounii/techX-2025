@@ -97,7 +97,7 @@ export default function HomePage() {
 						<div className="flex flex-wrap items-center justify-center gap-8">
 							<div className="xtext-[#ffa800] ">
 								<h1 className="mb-2 text-center text-xl font-bold tracking-tight text-[#ffa800] dark:text-[#ffa800] lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
-									1200+
+									200+
 								</h1>
 								<span className="mt-1 font-bold uppercase">Participants</span>
 							</div>
@@ -120,7 +120,7 @@ export default function HomePage() {
 							<div className="xbg-[#ffa800] hidden h-20 w-0.5 bg-black dark:bg-gray-300 md:block"></div>
 							<div className="">
 								<h1 className="mb-2 text-center text-xl font-bold tracking-tight text-[#ffa800] dark:text-[#ffa800] lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
-									50+
+									10+
 								</h1>
 								<span className="mt-1 font-bold uppercase">Speakers</span>
 							</div>
@@ -255,7 +255,7 @@ export default function HomePage() {
 			</Fade>
 
 			<Fade triggerOnce>
-				<AboutTunisiaSection />
+				<AboutCSS />
 			</Fade>
 			<Fade triggerOnce>
 				<AboutOrganisers />
@@ -428,47 +428,35 @@ export function AboutOrganisers(params) {
 	);
 }
 
-export function AboutTunisiaSection(params) {
+export function AboutCSS(params) {
 	return (
 		<section className="grid items-center justify-center gap-4 py-8 md:grid-cols-12 md:py-28">
 			<div className="col-span-6 mx-auto md:order-last">
-				<CustomImage
-					src={"https://i.imgur.com/EpXVkCB.png"}
-					className="mx-auto h-52 object-contain sm:h-96"
-					alt="techx"
-				/>
+<CustomImage src={"/assets/partners/ieee-national/syp.png"} className="mx-auto h-52 object-contain sm:h-96 dark:[filter:brightness(0)_invert(1)]" alt="about syp" />
 			</div>
 			<div className="col-span-6">
 				<h1 className="mb-4 text-4xl font-bold tracking-tight   lg:mb-7 lg:text-start lg:text-5xl lg:font-extrabold lg:leading-none">
-					About IEEE Tunisia Section.
+					About IEEE CS SYP.
 				</h1>
 				<h1 className="mb-4 text-lg font-medium  lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
-					Founded in 2008, the IEEE Tunisia Section is dedicated to spreading
-					IEEE initiatives throughout Tunisia. This is achieved through
-					educational and technical programs, networking opportunities, and the
-					advancement of technology and its applications to address humanitarian
-					challenges. The section actively supports chapters, special interest
-					groups, student activities, and student awards. IEEE has firmly
-					established its presence in the Tunisian engineering community, with
-					over 43 Student Branches located across various engineering schools,
-					faculties, and universities.
+					CS SYP (Student and Young Professionals) program is an initiative by the IEEE Computer Society designed to engage, support, and empower students and young professionals in the field of computing and technology.
 				</h1>
 				<div>
 					<Link
 						// type="button"
-						to={"https://ieee.tn/"}
+						to={"https://syp.computer.org/"}
 						target="_blank"
 						rel="noreferrer"
 						className="relative inline min-w-[120px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
 					>
 						{/* <div className="flex flex-wrap items-center justify-start gap-2"> */}
-						<span className="">Learn more IEEE Tunisia Section</span>
+						<span className="">Learn more IEEE CS SYP</span>
 						{/* </div> */}
 					</Link>
 				</div>
 			</div>
 		</section>
-	);
+	)
 }
 
 export function AboutTechX() {
@@ -573,54 +561,6 @@ function Memories() {
 							src={memory9}
 							alt=""
 						/>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
-}
-
-function AboutCongress() {
-	return (
-		<div className="hadow-xl bbg-white rounded-2xl py-24 sm:py-10">
-			<div className="mx-auto max-w-7xl px-6 lg:px-8">
-				<h2 className="mb-12 text-center text-4xl font-bold">
-					About TSYP Congress 2023
-				</h2>
-				<div className="mx-auto mt-10 grid max-w-lg items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-12">
-					<div className="col-span-4 flex flex-col items-center gap-4">
-						<CustomImage
-							className="h-14 w-14 object-contain"
-							src="https://sections-congress.ieee.org/assets/img/site_images/home/network.webp"
-							alt=""
-						/>
-						<div className="text-2xl font-bold">Network</div>
-						<p className="text-center">
-							Network and build relationships with other volunteers within IEEE.
-						</p>
-					</div>
-					<div className="col-span-4 flex flex-col items-center gap-4">
-						<CustomImage
-							className="h-14 w-14 object-contain"
-							src="https://sections-congress.ieee.org/assets/img/site_images/home/learn.webp"
-							alt=""
-						/>
-						<div className="text-2xl font-bold">Learn</div>
-						<p className="text-center">
-							To provide an opportunity for delegates to gain information and
-							training skills.
-						</p>
-					</div>
-					<div className="col-span-4 flex flex-col items-center gap-4">
-						<CustomImage
-							className="h-14 w-14 object-contain"
-							src="https://sections-congress.ieee.org/assets/img/site_images/home/goal.webp"
-							alt=""
-						/>
-						<div className="text-2xl font-bold">Plan ahead</div>
-						<p className="text-center">
-							Collectively shape the future and goals of the IEEE.
-						</p>
 					</div>
 				</div>
 			</div>
@@ -801,13 +741,47 @@ function PreviousEditions() {
 function HostedBy() {
 	return (
 		<div className="mx-auto max-w-7xl px-6 lg:px-8">
-			<Link
-				className="flex max-w-7xl items-center justify-center gap-3 px-6 lg:px-8"
-				to={`/contributors#ExclusiveAcademicPartner`}
-			>
 				<h2 className="text-center text-4xl font-bold">Hosted by</h2>
-				<FontAwesomeIcon icon={faExternalLink} className="h-5 w-5" />
-			</Link>
+			<div className="ggrid mx-auto mt-10 flex max-w-lg grid-cols-4 flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+				<a
+					href="http://www.isetjb.rnu.tn/"
+									target="_blank"
+					rel="noreferrer"
+					className="overflow-hidden rounded-full bg-white p-4 shadow-md shadow-gray-200 transition hover:scale-105"
+				>
+					<CustomImage
+						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
+
+						src={"https://www.ecoles.com.tn/sites/default/files/universite/logo/logo_Iset-djerba.jpg"}
+						alt="isetdjerba"
+					// width={200}
+					// height={200}
+					/>
+				</a>
+				<a
+					href="https://computer.ieee.tn/"
+					target="_blank"
+					rel="noreferrer"
+					className="overflow-hidden rounded-full bg-white p-4 shadow-md shadow-gray-200 transition hover:scale-105"
+				>
+					<CustomImage
+						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
+
+						src={"/assets/hosting/polytech.jpg"}
+						alt="polytechnique sousse"
+					// width={200}
+					// height={200}
+					/>
+				</a>
+			</div>
+		</div>
+	);
+}
+
+function PoweredBy() {
+	return (
+		<div className="mx-auto max-w-7xl px-6 lg:px-8">
+			<h2 className="mb-12 text-center text-4xl font-bold">Powered By</h2>
 			<div className="ggrid mx-auto mt-10 flex max-w-lg grid-cols-4 flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
 				<a
 					href="https://isetdjerba.ieee.tn/"
@@ -837,121 +811,7 @@ function HostedBy() {
 					// height={200}
 					/>
 				</a>
-			</div>
-		</div>
-	);
-}
-
-function PoweredBy() {
-	return (
-		<div className="mx-auto max-w-7xl px-6 lg:px-8">
-			<h2 className="mb-12 text-center text-4xl font-bold">Powered By</h2>
-			<div className="ggrid mx-auto mt-10 flex max-w-lg grid-cols-4 flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-				<a
-					href="https://entrepreneurship.ieee.org/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-				>
-					<CustomImage
-						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-						src={"/assets/partners/ieee-national/entrepreneurship.png"}
-						alt="entrepreneurship"
-					// width={200}
-					// height={200}
-					/>
-				</a>
-				{true && (
-					<a
-						href="https://yp.ieee.org/"
-						target="_blank"
-						rel="noreferrer"
-						className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-					>
-						<CustomImage
-							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[200px] md:w-[200px] lg:col-span-1"
-							src={"/assets/partners/ieee-national/yp.png"}
-							alt="YpTunisia"
-						// width={200}
-						// height={200}
-						/>
-					</a>
-				)}
-				<a
-					href="https://syp.computer.org/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
-				>
-					<CustomImage
-						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-						src={"/assets/partners/ieee-national/syp.png"}
-						alt="syp"
-					// width={200}
-					// height={200}
-					/>
-				</a>
-				<a
-					href="https://computer.ieee.tn/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
-				>
-					<CustomImage
-						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-						src={"https://i.imgur.com/88XtjGw.png"}
-						alt="university of sousse"
-					// width={200}
-					// height={200}
-					/>
-				</a>
-				<a
-					href="https://computer.ieee.tn/"
-					target="_blank"
-					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
-				>
-					<CustomImage
-						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-						src={"https://i.imgur.com/ABdMAlo.png"}
-						alt="university of sousse"
-					// width={200}
-					// height={200}
-					/>
-				</a>
-				{false && (
-					<a
-						href="https://ieeer8.org/"
-						target="_blank"
-						rel="noreferrer"
-						className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
-					>
-						<CustomImage
-							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-							src={"https://i.imgur.com/mFTrYL2.png"}
-							alt="IEEE Region 8"
-						// width={200}
-						// height={200}
-						/>
-					</a>
-				)}
 				
-				{false && (
-					<a
-						href="https://www.ieee.org/"
-						target="_blank"
-						rel="noreferrer"
-						className="overflow-hidden rounded-full p-4 shadow-md shadow-gray-200 transition hover:scale-105"
-					>
-						<CustomImage
-							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-							src={"https://i.imgur.com/mFTrYL2.png"}
-							alt="IEEE"
-						// width={200}
-						// height={200}
-						/>
-					</a>
-				)}
 			</div>
 		</div>
 	);
@@ -1006,6 +866,114 @@ function IEEEPartners() {
 		<div className="mx-auto max-w-7xl px-6 lg:px-8">
 			<h2 className="mb-12 text-center text-4xl font-bold">IEEE Partners</h2>
 			<div className="ggrid mx-auto mt-10 flex max-w-lg grid-cols-4 flex-wrap items-center justify-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+				<a
+					href="https://entrepreneurship.ieee.org/"
+					target="_blank"
+					rel="noreferrer"
+					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
+				>
+					<CustomImage
+						className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
+						src={"/assets/partners/ieee-national/entrepreneurship.png"}
+						alt="entrepreneurship"
+					// width={200}
+					// height={200}
+					/>
+				</a>
+				{true && (
+					<a
+						href="https://yp.ieee.org/"
+										target="_blank"
+					rel="noreferrer"
+					className="overflow-hidden rounded-full bg-white p-4 shadow-md shadow-gray-200 transition hover:scale-105"
+				>
+					<CustomImage
+						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
+							src={"/assets/partners/ieee-national/yp.png"}
+							alt="YpTunisia"
+						// width={200}
+						// height={200}
+						/>
+					</a>
+				)}
+				<a
+					href="https://syp.computer.org/"
+										target="_blank"
+					rel="noreferrer"
+					className="overflow-hidden rounded-full bg-white p-4 shadow-md shadow-gray-200 transition hover:scale-105"
+				>
+					<CustomImage
+						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
+						src={"/assets/partners/ieee-national/syp.png"}
+						alt="syp"
+					// width={200}
+					// height={200}
+					/>
+				</a>
+				<a
+					href="https://computer.ieee.tn/"
+									target="_blank"
+					rel="noreferrer"
+					className="overflow-hidden rounded-full bg-white p-4 shadow-md shadow-gray-200 transition hover:scale-105"
+				>
+					<CustomImage
+						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
+
+						src={"https://i.imgur.com/88XtjGw.png"}
+						alt="university of sousse"
+					// width={200}
+					// height={200}
+					/>
+				</a>
+				<a
+					href="https://computer.ieee.tn/"
+					target="_blank"
+					rel="noreferrer"
+					className="overflow-hidden rounded-full bg-white p-4 shadow-md shadow-gray-200 transition hover:scale-105"
+				>
+					<CustomImage
+						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
+
+						src={"https://i.imgur.com/ABdMAlo.png"}
+						alt="university of sousse"
+					// width={200}
+					// height={200}
+					/>
+				</a>
+				{false && (
+					<a
+						href="https://ieeer8.org/"
+					target="_blank"
+					rel="noreferrer"
+					className="overflow-hidden rounded-full bg-white p-4 shadow-md shadow-gray-200 transition hover:scale-105"
+				>
+					<CustomImage
+						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
+
+							src={"https://i.imgur.com/mFTrYL2.png"}
+							alt="IEEE Region 8"
+						// width={200}
+						// height={200}
+						/>
+					</a>
+				)}
+				
+				{false && (
+					<a
+						href="https://www.ieee.org/"
+						target="_blank"
+						rel="noreferrer"
+						className="overflow-hidden rounded-full p-4 shadow-md shadow-gray-200 transition hover:scale-105"
+					>
+						<CustomImage
+							className="col-span-2 h-[120px] w-[120px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
+							src={"https://i.imgur.com/mFTrYL2.png"}
+							alt="IEEE"
+						// width={200}
+						// height={200}
+						/>
+					</a>
+				)}
 				{false && (
 					<a
 						href="https://www.ieee.org/"
@@ -1040,12 +1008,12 @@ function IEEEPartners() {
 				)}
 				<a
 					href="https://ieeer8.org/student-activities/sa-committee/sac/"
-					target="_blank"
+									target="_blank"
 					rel="noreferrer"
-					className="overflow-hidden rounded-full shadow-md shadow-gray-200 transition hover:scale-105"
+					className="overflow-hidden rounded-full bg-white p-4 shadow-md shadow-gray-200 transition hover:scale-105"
 				>
 					<CustomImage
-						className="col-span-2 h-[115px] w-[115px] rounded-full bg-white object-contain p-4 shadow-md shadow-gray-200 transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[180px] md:w-[180px] lg:col-span-1"
+						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
 						src={"https://i.imgur.com/uO5riCW.png"}
 						alt="Transistor"
 					// width={200}

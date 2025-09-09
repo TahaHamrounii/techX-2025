@@ -9,7 +9,7 @@ import {
 	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import hich from "../../assets/favicon.ico";
+import hich from "../../assets/fontbolt.png";
 
 export default function Footer() {
 	return (
