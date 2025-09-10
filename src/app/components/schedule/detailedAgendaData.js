@@ -22,13 +22,9 @@ export const day1 = [
     subItems: [
       { time: '2:00 – 2:10 PM', title: 'Special Opening & Welcoming', speaker: 'Moderator', notes: 'Tunisia National Anthem + Palestine National Anthem + Welcome + transitions.' },
       { time: '2:10 – 2:12 PM', title: 'Intervention', speaker: 'Leads: Aziz Bouassida & Med Aziz Achouri' },
-      { time: '2:12 – 2:13 PM', title: 'Transition', speaker: 'Moderator' },
       { time: '2:13 – 2:15 PM', title: 'Intervention', speaker: 'Chairs: Mohamed Mehdi Ben Ameur & Maha Benzrig' },
-      { time: '2:15 – 2:16 PM', title: 'Transition', speaker: 'Moderator' },
       { time: '2:16 – 2:20 PM', title: 'Intervention', speaker: 'Counselors: Mr. Salah Gontara & Mr. Wajdi Bouajila' },
-      { time: '2:20 – 2:21 PM', title: 'Transition', speaker: 'Moderator' },
       { time: '2:23 – 2:25 PM', title: 'Intervention', speaker: 'Directors: Nadhem Sayari & Dhaw Brini' },
-      { time: '2:25 – 2:26 PM', title: 'Transition', speaker: 'Moderator' },
       { time: '2:26 – 2:34 PM', title: 'Intervention', speaker: 'Sponsors' },
       { time: '2:34 – 2:44 PM', title: 'Partners Segment', speaker: 'Moderator + Partners (CS Tunisia, YP Tunisia, SMC, Tunisia Section)' },
       { time: '2:44 – 2:45 PM', title: 'Transition to Panel', speaker: 'Moderator' }
