@@ -41,7 +41,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fade } from "react-awesome-reveal";
 import { useMediaQuery } from "usehooks-ts";
-import { Countdown } from "../components/Countdown";
+import { Countdown } from "../components/Countdown"; // legacy (if still used elsewhere)
+import FuturisticCountdown from "../components/FuturisticCountdown";
 import CustomImage from "../components/CustomImage";
 import Speakers from "../components/Speakers";
 import StyledButton from "../components/StyledButton";
@@ -71,10 +72,6 @@ export default function HomePage() {
 							</>
 						)}
 
-						<h1 className=" mt-2 text-center text-4xl font-bold tracking-tight lg:mb-8 lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
-							By ISET Djerba<span className="text-[#ffa800] dark:text-[#ffa800]"> & </span>  Polytechnique Sousse
-						</h1>
-						{/* <h1 className="mb-4 text-center text-xl font-bold tracking-tight lg:mb-7 lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none"> */}
 
 
 						{true && (
@@ -94,7 +91,9 @@ export default function HomePage() {
 								Registration Opening Soon
 							</span> */}
 						</div>
-						<div className="flex flex-wrap items-center justify-center gap-8">
+						{/* Futuristic outlined countdown - set target date/time (UTC recommended) */}
+						<FuturisticCountdown targetDate="2025-09-27T08:00:00Z" />
+						<div className="flex flex-wrap items-center justify-center gap-8 mt-5">
 							<div className="xtext-[#ffa800] ">
 								<h1 className="mb-2 text-center text-xl font-bold tracking-tight text-[#ffa800] dark:text-[#ffa800] lg:text-center lg:text-2xl lg:font-extrabold lg:leading-none">
 									200+
@@ -272,11 +271,11 @@ export default function HomePage() {
 					<PreviousEditions />
 				</section>
 			</Fade> */}
-			<Fade triggerOnce>
+			{/* <Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<Memories />
 				</section>
-			</Fade>
+			</Fade> */}
 			<Fade triggerOnce>
 				<section className="py-8 md:py-10">
 					<HostedBy />
@@ -752,8 +751,8 @@ function HostedBy() {
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
 
-						src={"https://www.ecoles.com.tn/sites/default/files/universite/logo/logo_Iset-djerba.jpg"}
-						alt="isetdjerba"
+						src={"/assets/hosting/csiset.png"}
+						alt="cs iset djerba"
 					// width={200}
 					// height={200}
 					/>
@@ -767,8 +766,8 @@ function HostedBy() {
 					<CustomImage
 						className="col-span-2 h-[115px] w-[115px] bg-white object-contain p-4 transition hover:scale-105 dark:shadow-gray-800 md:h-[160px] md:w-[160px] lg:col-span-1"
 
-						src={"/assets/hosting/polytech.jpg"}
-						alt="polytechnique sousse"
+						src={"/assets/hosting/cseps.png"}
+						alt="cs polytechnique sousse"
 					// width={200}
 					// height={200}
 					/>
