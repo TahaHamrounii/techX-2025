@@ -30,12 +30,10 @@ export default function FuturisticCountdown({ targetDate }) {
   ];
 
   return (
-    <div className="mx-auto mt-10 w-full max-w-6xl px-4">
-      <div className="flex flex-wrap items-stretch justify-center gap-36">
-        {blocks.map((b, i) => (
-          <>
-            <TimeBlock key={b.label} label={b.label} value={b.value} />
-          </>
+    <div className="mx-auto mt-10 w-full max-w-6xl px-3 sm:px-4">
+      <div className="flex flex-wrap items-stretch justify-center gap-6 sm:gap-12">
+        {blocks.map((b) => (
+          <TimeBlock key={b.label} label={b.label} value={b.value} />
         ))}
       </div>
     </div>
@@ -45,33 +43,45 @@ export default function FuturisticCountdown({ targetDate }) {
 function TimeBlock({ label, value }) {
   const padded = String(value).padStart(2, '0');
   return (
-    <div className="flex flex-col items-center ">
+    <div className="flex basis-1/2 flex-col items-center sm:basis-auto">
       <div
-        className="relative flex items-center justify-center "
+        className="relative flex items-center justify-center"
         style={{
-          // Glow ring
+          // subtle glow on larger screens
+          filter: 'drop-shadow(0 0 10px rgba(255,168,0,0.25)) drop-shadow(0 0 20px rgba(255,168,0,0.12))'
         }}
       >
+        {/* Mobile: solid fill; >=sm: outlined */}
         <span
-          className="select-none leading-none text-white dark:text-white"
+          className="block select-none leading-none text-[#ffa800] sm:hidden"
+          style={{
+            fontFamily: 'var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace)',
+            fontWeight: 900,
+            letterSpacing: '-2px',
+            fontSize: 'clamp(3rem, 12vw, 6rem)'
+          }}
+          aria-hidden="true"
+        >
+          {padded}
+        </span>
+        <span
+          className="hidden select-none leading-none text-white sm:block"
           style={{
             fontFamily: 'var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace)',
             fontWeight: 800,
             letterSpacing: '-2px',
-            // Responsive sizing via clamp
             fontSize: 'clamp(3rem, 9vw, 7rem)',
             WebkitTextStroke: '4px #ffa800',
             color: 'white',
             textShadow: '0 0 6px rgba(255,168,0,0.35), 0 0 18px rgba(255,168,0,0.25)'
           }}
           aria-hidden="true"
-
         >
           {padded}
         </span>
         <span className="sr-only">{padded} {label}</span>
       </div>
-      <span className="mt-3 text-sm font-semibold uppercase tracking-wide text-[#ffa800]">{label}</span>
+      <span className="mt-2 text-xs font-semibold uppercase tracking-wide text-[#ffa800] sm:mt-3 sm:text-sm">{label}</span>
     </div>
   );
 }

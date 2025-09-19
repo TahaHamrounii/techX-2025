@@ -167,15 +167,6 @@ export default function Navigation() {
 
 						{!isEventLive ? (
 							<>
-									<Link
-										to="/registration"
-										className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-[#ffa800] font-medium text-black transition-colors duration-200 hover:bg-[#e09600] hover:text-black focus:outline-none focus:ring-4 focus:ring-[#ffa800]/40"
-									>
-										<div className="relative text-white flex items-center justify-center gap-2 rounded-md bg-[#ffa800] px-5 py-2.5 transition-all duration-75 ease-in group-hover:bg-opacity-0 ">
-											<span className="hidden md:block">Register Now</span>
-											<span className="md:hidden">Register Now</span>
-										</div>
-									</Link>
 							</>
 						)
 						:(
