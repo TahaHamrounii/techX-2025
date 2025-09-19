@@ -15,6 +15,23 @@
     "image": { "url": "/assets/speakers/Mariem_Zaouali_photo.jpg" },
     "imageSmall": { "url": "/assets/speakers/Mariem_Zaouali_photo.jpg" }
   },
+{
+  "enabled": true,
+  "name": "Razi Miliani",
+  "bio": "Razi Miliani is the CEO of COGEPHA, Tunisia’s largest pharmaceutical distribution company. A pharmacist with an Executive MBA from IAE Sorbonne Business School and Paris-Dauphine, he also serves as the Vice President of both the Tunisian Syndicate of Pharmaceutical Distribution and the African Pharmaceutical Distribution Association. He actively follows key technological trends that facilitate work in the supply-chain sector. Mr. Miliani is a keen advocate for Generative AI, frequently speaking at events and in Tunisian media on its impact on businesses. He has also consulted on plans for innovation projects for the Tunisian government.",
+  "title": "Panel Speaker",
+  "talk": {
+    "title": "AI in Industry, Humanitarian, and Healthcare",
+    "description": "Panel discussion on the applications of AI across industry, humanitarian efforts, and healthcare, with a focus on supply chain innovation and the role of Generative AI.",
+    "youtube": null
+  },
+  "slug": "Razi-Miliani",
+  "twitterUsername": null,
+  "company": { "name": "COGEPHA" },
+  "image": { "url": "/assets/speakers/razi.jpg" },
+  "imageSmall": { "url": "/assets/speakers/razi.jpg" }
+}
+,
   {
     "enabled": true,
     "name": "Sdiri Jamel Eddine",
