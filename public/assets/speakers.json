@@ -1,3 +1,210 @@
 [
-
+  {
+    "enabled": true,
+    "name": "Mariem Zouali",
+    "bio": "Mariem Zaouali is an Assistant Professor at the National Engineering School of Tunis (ENIT). A Software Engineer graduate from National Institute of Applied Sciences and Technology (INSAT) in 2013, she holds a Ph.D. in Computer Science from the Faculty of Sciences of Tunis (FST) in 2019. Her research focuses on remote sensing image processing, using machine learning and artificial intelligence (AI) to monitor land use and help prevent climate change.",
+    "title": "Technical Workshop Speaker",
+    "talk": {
+      "title": "Workshop Track 3: Nvidia Deep Learning",
+      "description": "Workshop on deep learning applications with Nvidia tools and AI for climate change monitoring.",
+      "youtube": null
+    },
+    "slug": "Mariem-Zouali",
+    "twitterUsername": null,
+    "company": { "name": "ENIT" },
+    "image": { "url": "/assets/speakers/Mariem_Zaouali_photo.jpg" },
+    "imageSmall": { "url": "/assets/speakers/Mariem_Zaouali_photo.jpg" }
+  },
+  {
+    "enabled": true,
+    "name": "Sdiri Jamel Eddine",
+    "bio": "SOLIDWORKS Application Engineer at ABBK PHYSICSWORKS, specializing in SOLIDWORKS and 3DEXPERIENCE. Certified SOLIDWORKS Expert (CSWE), with expertise in CAD and simulation-driven design. Skilled in flow simulation, thermal systems engineering, and energy systems, delivering software demonstrations, supporting implementations, troubleshooting complex design challenges, and providing technical training for students and professionals.",
+    "title": "Technical Workshop Speaker",
+    "talk": {
+      "title": "Workshop Track 4: SolidWorks CSWA",
+      "description": "Hands-on workshop on SolidWorks CSWA, CAD, and simulation-driven design.",
+      "youtube": null
+    },
+    "slug": "Sdiri-Jamel-Eddine",
+    "twitterUsername": null,
+    "company": { "name": "ABBK PHYSICSWORKS" },
+    "image": { "url": "/assets/speakers/sdiri.png" },
+    "imageSmall": { "url": "/assets/speakers/sdiri.png" }
+  },
+  {
+    "enabled": true,
+    "name": "Abdelweheb Gueddes",
+    "bio": "Abdelweheb Gueddes is a computer science researcher holding a PhD in probabilistic ontologies from ISITCom, Hammam Sousse. He has solid academic and industrial experience, ranging from teaching and supervising projects to leading IT solutions in e-learning and AI-based healthcare. His research mainly focuses on intelligent systems, knowledge graphs, and ontology-based reasoning, with several publications in Q1 journals and international conferences.",
+    "title": "Technical Workshop Speaker",
+    "talk": {
+      "title": "Workshop Track 1: Web/Mobile development",
+      "description": "Workshop on modern web and mobile development practices.",
+      "youtube": null
+    },
+    "slug": "Abdelweheb-Gueddes",
+    "twitterUsername": null,
+    "company": { "name": null },
+    "image": { "url": "/assets/speakers/abdelwehed.jpeg" },
+    "imageSmall": { "url": "/assets/speakers/abdelwehed.jpeg" }
+  },
+  {
+    "enabled": true,
+    "name": "Mohamed Salah Naija",
+    "bio": "Mohamed Salah Naija is a Full Stack Web Developer and AWS Certified Cloud Practitioner with experience as a Technical Instructor at Orange. He holds a Master’s degree in Software Engineering and Rapid Application Development from ISET Sousse (2024) and a Bachelor’s degree in Multimedia and Web Development (2021). He is passionate about JavaScript, cloud computing, and DevOps, and brings strong problem-solving, communication, and teamwork skills.",
+    "title": "Technical Workshop Speaker",
+    "talk": {
+      "title": "Workshop Track 2: Cloud and DevOps",
+      "description": "Workshop on cloud technologies and DevOps practices.",
+      "youtube": null
+    },
+    "slug": "Mohamed-Salah-Naija",
+    "twitterUsername": null,
+    "company": { "name": null },
+    "image": { "url": "/assets/speakers/msalah.jpg" },
+    "imageSmall": { "url": "/assets/speakers/msalah.jpg" }
+  },
+  {
+    "enabled": true,
+    "name": "Elisa Barney Smith",
+    "bio": "Elisa Barney Smith is a professor at Luleå University of Technology (LTU), Sweden which she joined after a 22 year career in the Electrical & Computer Engineering department at Boise State University in Boise Idaho USA. She is in LTU’s Machine Learning group in the Department of Computer Science, Electrical and Space Engineering, Embedded Internet Systems Lab (EISLAB). She received a B.S. in Computer Science and the M.S. and Ph.D. degrees in Electrical, Computer and Systems Engineering all from Rensselaer Polytechnic Institute, Troy, NY, USA.",
+    "title": "Panelist",
+    "talk": {
+      "title": "AI in Humanities",
+      "description": "Panel session exploring the role of AI in the humanities.",
+      "youtube": null
+    },
+    "slug": "Elisa-Barney-Smith",
+    "twitterUsername": null,
+    "company": { "name": null },
+    "image": { "url": "/assets/speakers/Elisa.webp" },
+    "imageSmall": { "url": "/assets/speakers/Elisa.webp" }
+  },
+  {
+    "enabled": true,
+    "name": "Feyrouz Hamdaoui",
+    "bio": "University faculty member with nearly 20 years of experience in Computer Science. Doctoral researcher in Computer Science at the National School of Computing Sciences (ENSI), affiliated with LARIA (Laboratoire de Recherche en Intelligence Artificielle). Currently teaching at the Polytechnic School of Sousse (EPS), where she also served as a previous counselor of IEEE EPS SB and faculty sponsor of ACM EPS SC. General Secretary of the TCPC (Tunisian Collegiate Programming Contest) national committee and General Coordinator of the competition in the Maghreb region.",
+    "title": "Panelist",
+    "talk": {
+      "title": "AI in Education",
+      "description": "Panel on the role of AI in education and learning environments.",
+      "youtube": null
+    },
+    "slug": "Feyrouz-Hamdaoui",
+    "twitterUsername": null,
+    "company": { "name": "EPS / ENSI" },
+    "image": { "url": "/assets/speakers/F_Hamdaoui.jpg" },
+    "imageSmall": { "url": "/assets/speakers/F_Hamdaoui.jpg" }
+  },
+  {
+    "enabled": false,
+    "name": "TBD",
+    "bio": null,
+    "title": "Panelist",
+    "talk": {
+      "title": "AI in Industry, Humanitarian, or Healthcare",
+      "description": "Panel session (speaker not yet confirmed).",
+      "youtube": null
+    },
+    "slug": "AI-Industry-Healthcare",
+    "twitterUsername": null,
+    "company": { "name": null },
+    "image": { "url": "/assets/speakers/x.jpg" },
+    "imageSmall": { "url": "/assets/speakers/x.jpg" }
+  },
+  {
+    "enabled": true,
+    "name": "Maria Pia Fanti",
+    "bio": "Maria Pia Fanti received the Laurea degree in electronic engineering from the University of Pisa, Pisa, Italy, in 1983. She was a visiting researcher at the Rensselaer Polytechnic Institute of Troy, New York, in 1999. Since 1983, she has been with the Department of Electrical and Information Engineering of the Polytechnic of Bari, Italy, where she is currently a Full Professor of system and control engineering and Chair of the Laboratory of Automation and Control. Her research interests include management and modeling of complex systems",
+    "title": "Panelist",
+    "talk": {
+      "title": "AI in Cooperative and Automated Mobility / SMC Session",
+      "description": "Panel session on AI in cooperative and automated mobility.",
+      "youtube": null
+    },
+    "slug": "Maria-Pia-Fanti",
+    "twitterUsername": null,
+    "company": { "name": null },
+    "image": { "url": "/assets/speakers/maria.png" },
+    "imageSmall": { "url": "/assets/speakers/maria.png" }
+  },
+  {
+    "enabled": true,
+    "name": "Mohamed Fares Frini",
+    "bio": "Mohamed Fares Frini is an IT Engineer specializing in Data Science and an active IEEE volunteer. He currently serves as Webmaster for the IEEE Computer Society Tunisia Chapter and the IEEE Consultant Network Affinity Group – Tunisia Section, as well as IT & Media Manager for the TN2056 Challenge 2nd Edition. Previously, he was Webmaster for the IEEE Industrial Electronics Society R8 SYP Congress 2025.",
+    "title": "Non-Technical Workshop Speaker",
+    "talk": {
+      "title": "CS Benefits Session",
+      "description": "Non-technical session on IEEE Computer Society membership benefits.",
+      "youtube": null
+    },
+    "slug": "Mohamed-Fares-Frini",
+    "twitterUsername": null,
+    "company": { "name": "IEEE Computer Society Tunisia Chapter" },
+    "image": { "url": "/assets/speakers/mohamedfaresfrini.jpg" },
+    "imageSmall": { "url": "/assets/speakers/mohamedfaresfrini.jpg" }
+  },
+  {
+    "enabled": true,
+    "name": "Malak Chniter",
+    "bio": "Ph.D. student in Computer Science at the University of Sfax, member of ReGIM Laboratory. Research on machine learning, cluster analysis, computational complexity, and big data technologies. Active IEEE volunteer.",
+    "title": "Non-Technical Workshop Speaker",
+    "talk": {
+      "title": "SMC Session: Artificial Intelligence Approaches for Cooperative, Connected and Automated Mobility",
+      "description": "Workshop exploring AI approaches for cooperative, connected, and automated mobility.",
+      "youtube": null
+    },
+    "slug": "Malak-Chniter",
+    "twitterUsername": null,
+    "company": { "name": "University of Sfax / ReGIM Lab" },
+    "image": { "url": "/assets/speakers/malak_chniter.jpg" },
+    "imageSmall": { "url": "/assets/speakers/malak_chniter.jpg" }
+  },
+  {
+    "enabled": true,
+    "name": "Amine Gasmi",
+    "bio": "Amine Gasmi is an Electrical and Automation Engineer specializing in Embedded Systems, IoT, Renewable Energy, and Smart City Technologies. He is also a Robotics and STEM Instructor with Young Engineers, mentoring the next generation of innovators. Amine is actively engaged in the IEEE community, holding several key leadership roles: IEEE Young Professionals MTT-S Region 8 Representative & Community Manager, Young Professional Climate Change Member, Area 6 Representative (2024), Vice Chair – IEEE PES Tunisia Section (2022–2024), Member – IEEE Smart Village, PES DAY 2023 R8 Lead",
+    "title": "Non-Technical Workshop Speaker",
+    "talk": {
+      "title": "MTTS Session: Hands-on IoT with Smart Sensors & RF Control",
+      "description": "Hands-on workshop on IoT with smart sensors and RF control.",
+      "youtube": null
+    },
+    "slug": "Amine-Gasmi",
+    "twitterUsername": null,
+    "company": { "name": "IEEE / Young Engineers" },
+    "image": { "url": "/assets/speakers/Gasmi.png" },
+    "imageSmall": { "url": "/assets/speakers/Gasmi.png" }
+  },
+  {
+    "enabled": true,
+    "name": "Khalil Masmoudi",
+    "bio": "AI Engineer at Olivesoft. Vice Chair, IEEE YP Tunisia Affinity Group. Student Projects and Contests Coordinator, IEEE Tunisia Section SAC.",
+    "title": "Non-Technical Workshop Speaker",
+    "talk": {
+      "title": "Student-to-YP Transition Session",
+      "description": "Session on transitioning from student membership to IEEE Young Professionals.",
+      "youtube": null
+    },
+    "slug": "Khalil-Masmoudi",
+    "twitterUsername": null,
+    "company": { "name": "Olivesoft" },
+    "image": { "url": "/assets/speakers/masmoudi.jpg" },
+    "imageSmall": { "url": "/assets/speakers/masmoudi.jpg" }
+  },
+  {
+    "enabled": true,
+    "name": "Hela Bouaalegue",
+    "bio": "Hela Bouaalegue is a Renewable Energy Engineer, entrepreneur, and SAP-certified consultant with expertise in energy system modeling, sustainability, and business process integration. She has contributed to sustainability projects and climate tech initiatives as well as startup development across Africa. She is passionate about driving the energy transition through innovation and entrepreneurship.",
+    "title": "Non-Technical Workshop Speaker",
+    "talk": {
+      "title": "Entrepreneurship Session",
+      "description": "Session on innovation, entrepreneurship, and the energy transition.",
+      "youtube": null
+    },
+    "slug": "Hela-Bouaalegue",
+    "twitterUsername": null,
+    "company": { "name": null },
+    "image": { "url": "/assets/speakers/helabouaalegue.jpeg" },
+    "imageSmall": { "url": "/assets/speakers/helabouaalegue.jpeg" }
+  }
 ]
