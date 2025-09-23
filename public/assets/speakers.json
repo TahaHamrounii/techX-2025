@@ -223,5 +223,37 @@
     "company": { "name": null },
     "image": { "url": "/assets/speakers/helabouaalegue.jpeg" },
     "imageSmall": { "url": "/assets/speakers/helabouaalegue.jpeg" }
+  },
+  {
+     "enabled": true,
+  "name": "Oussama Mhadhbi",
+  "bio": "Oussama Mhadhbi is a Tech Lead and Automation Expert at LEONI Wiring Systems in Tunisia. He specializes in architecting and deploying intelligent automation solutions that drive efficiency and scalability within industrial environments. With a proven track record of leading the development of over 35 RPA bots and modernizing critical workflows using UiPath, ServiceNow, and the Microsoft Power Platform, he bridges the gap between cutting-edge technology and tangible business outcomes. His work focuses on creating scalable systems that reduce manual effort, enable data-driven decision-making, and lay the groundwork for integrating AI into core operational processes. He is passionate about the future of industrial automation and how scalable AI-driven applications will transform manufacturing and enterprise IT.",
+  "title": "Technical Workshop Speaker",
+  "talk": {
+    "title": "Automation & AI in Industry",
+    "description": "Session on scalable automation, RPA, and AI-driven solutions for industrial and IT processes.",
+    "youtube": null
+  },
+    "slug": "Oussama-Mhadhbi",
+    "twitterUsername": null,
+    "company": { "name": "LEONI Wiring Systems" },
+    "image": { "url": "/assets/speakers/oussama.jpg" },
+    "imageSmall": { "url": "/assets/speakers/oussama.jpg" }
+  },
+   {
+  "enabled": true,
+  "name": "Dr. Salah Gontara",
+  "bio": "Dr. Salah Gontara is an Assistant Professor at the Polytechnic School of Sousse and a researcher specializing in cybersecurity, blockchain, and computer networks, with a recent focus on continuous integration and MLOps. He earned his Ph.D. in Computer Science from ISITCom (Tunisia), where he worked on decentralized approaches to network failure localization. His research interests include system security, Ethereum blockchain, and fault detection in distributed networks. He teaches network security, DevOps, cryptography, and blockchain applications, and mentors students as an IEEE Counselor. An alumnus of the Thomas Jefferson Scholarship Program at the University of Louisiana, Dr. Gontara is committed to advancing secure and scalable digital infrastructures while fostering innovation at the intersection of emerging technologies and real-world applications.",
+  "title": "Panelist",
+  "talk": {
+    "title": "Cybersecurity, Blockchain & Emerging Technologies",
+    "description": "Session on system security, blockchain applications, and scalable infrastructures in the age of DevOps and AI.",
+    "youtube": null
+  },
+    "slug": "Dr-Salah-Gontara",
+    "twitterUsername": null,
+    "company": { "name": null },
+    "image": { "url": "/assets/speakers/salah.jpg" },
+    "imageSmall": { "url": "/assets/speakers/salah.jpg" }
   }
 ]
