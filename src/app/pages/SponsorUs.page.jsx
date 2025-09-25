@@ -23,7 +23,7 @@ export default function SponsorUsPage() {
 							<CustomImage
 								src={tsypCollabFilePreview}
 								className="mx-auto h-[32rem] rounded-2xl object-cover shadow-lg transition hover:scale-105"
-								alt="TSYP 11"
+								alt="Tech X"
 							/>
 						</Link>
 					</div>

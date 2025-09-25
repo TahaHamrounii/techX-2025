@@ -365,7 +365,7 @@ export function AboutOrganisers(params) {
 					{/* <CustomImage
 					src={SBGroupPic}
 					className="mx-auto h-56 rounded-2xl object-cover shadow-lg sm:h-96"
-					alt="TSYP 11"
+					alt="Tech X"
 				/> */}
 
 					<h1 className="mb-4 text-4xl font-bold tracking-tight   lg:mb-7 lg:text-start lg:text-4xl lg:font-extrabold lg:leading-none flex justify-center">

@@ -35,7 +35,7 @@ function Details(params) {
 						"https://i0.wp.com/workadventu.re/wp-content/uploads/2023/06/HP-Boost.webp?ssl=1"
 					}
 					className="mx-auto h-56 rounded-2xl object-cover shadow-lg sm:h-96"
-					alt="TSYP 11"
+					alt="Tech X"
 				/> */}
 			</div>
 			<div className="col-span-12 md:col-span-6">

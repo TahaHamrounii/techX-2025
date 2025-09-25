@@ -82,7 +82,7 @@ export default function NavModal({ setToggleModal, toggleModal }) {
 									>
 										<div className="px-4 sm:px-6">
 											<Dialog.Title className="text-lg font-bold">
-												TSYP 11
+												Tech X
 											</Dialog.Title>
 										</div>
 										<div className="mt-6 flex-1 px-4 sm:px-6">
@@ -134,7 +134,7 @@ export default function NavModal({ setToggleModal, toggleModal }) {
 															/>
 														</Link>
 													)}
-													{/* TSYP 11 © 2023 */}
+													{/* Tech X © 2023 */}
 												</Dialog.Title>
 											</div>
 

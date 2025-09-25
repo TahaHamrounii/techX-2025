@@ -64,7 +64,7 @@ export default function Navigation() {
 						</svg> */}
 
 						{/* <span className="self-center whitespace-nowrap text-xl font-semibold">
-							TSYP 11
+							Tech X
 						</span> */}
 					</Link>
 					<div className="fontt-['space_mono'] flex items-center gap-2">

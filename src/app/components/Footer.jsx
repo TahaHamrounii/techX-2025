@@ -36,14 +36,14 @@ export default function Footer() {
 							{/* <CustomImage
 						src="https://flowbite.com/docs/images/logo.svg"
 						className="mr-3 h-8"
-						alt="TSYP 11"
+						alt="Tech X"
 					/> */}
 							<div className="flex flex-wrap gap-2 font-['Tangerine'] text-3xl font-semibold dark:font-normal md:text-4xl ">
 								Brought to life by Hichem Fantar
-								{/* <CustomImage src={signature} className="mr-3 h-8 dark:invert" alt="TSYP 11" /> */}
+								{/* <CustomImage src={signature} className="mr-3 h-8 dark:invert" alt="Tech X" /> */}
 							</div>
 							{/* <span className="self-center whitespace-nowrap text-2xl font-semibold ">
-						TSYP 11
+						Tech X
 					</span> */}
 						</Link>
 					)}

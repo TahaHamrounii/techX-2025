@@ -6,7 +6,7 @@ export const oldSpeakersData = [
 		talk: {
 			title: "Keynote",
 			description:
-				"TSYP 11 Conf kicks off with Vercel CEO Guillermo Rauch (@rauchg) revealing the latest announcements, features, and improvements. He's joined by Lee, Lydia, and Delba to hear the latest Next.js updates.",
+				"Tech X Conf kicks off with Vercel CEO Guillermo Rauch (@rauchg) revealing the latest announcements, features, and improvements. He's joined by Lee, Lydia, and Delba to hear the latest Next.js updates.",
 			descriptionWithFormatting: {
 				value: {
 					schema: "dast",
@@ -19,7 +19,7 @@ export const oldSpeakersData = [
 									{
 										type: "span",
 										value:
-											"TSYP 11 Conf kicks off with Vercel CEO Guillermo Rauch (@rauchg) revealing the latest announcements, features, and improvements. He's joined by Lee, Lydia, and Delba to hear the latest Next.js updates.",
+											"Tech X Conf kicks off with Vercel CEO Guillermo Rauch (@rauchg) revealing the latest announcements, features, and improvements. He's joined by Lee, Lydia, and Delba to hear the latest Next.js updates.",
 									},
 								],
 							},
