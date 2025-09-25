@@ -137,50 +137,6 @@ export default function NavModal({ setToggleModal, toggleModal }) {
 													{/* Tech X © 2023 */}
 												</Dialog.Title>
 											</div>
-
-											<div className="flex items-center gap-4 px-4 sm:px-6">
-												<a
-													href="https://github.com/hichemfantar/TSYP-11-Official-Website"
-													target="_blank"
-													rel="noreferrer"
-													className="text-gray-800 dark:text-gray-300"
-												>
-													<FontAwesomeIcon
-														icon={faGithub}
-														className="block h-5 w-5"
-													/>
-												</a>
-
-												<a
-													href="https://www.facebook.com/ieee.tsyp"
-													target="_blank"
-													rel="noreferrer"
-													className="text-gray-600 dark:text-gray-400"
-													aria-label="facebook page"
-												>
-													<FontAwesomeIcon icon={faFacebook} />
-												</a>
-												<a
-													href="https://www.instagram.com/ieee_tsyp/"
-													target="_blank"
-													rel="noreferrer"
-													className="text-gray-600 dark:text-gray-400"
-													aria-label="instagram page"
-												>
-													<FontAwesomeIcon icon={faInstagram} />
-												</a>
-												<a
-													href="https://www.linkedin.com/company/ieee-tsyp/"
-													target="_blank"
-													rel="noreferrer"
-													className="text-gray-600 dark:text-gray-400"
-													aria-label="linkedin page"
-												>
-													<FontAwesomeIcon icon={faLinkedin} />
-												</a>
-
-												<ThemeToggle />
-											</div>
 										</div>
 									</div>
 								</Dialog.Panel>
